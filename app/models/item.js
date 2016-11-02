@@ -5,4 +5,6 @@ export default DS.Model.extend({
   description: DS.attr('description'),
   image: DS.attr('image'),
   cost: DS.attr('cost')
+  categories DS.hasMany('category', {async: true}),
+  reviews: DS.hasMany('reviews', {async: true})
 });
