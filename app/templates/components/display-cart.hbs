@@ -1,1 +1,5 @@
-{{yield}}
+hi
+
+{{#each shoppingCart.items as |item|}}
+  {{item.title}} -- {{item.cost}}
+{{/each}}
