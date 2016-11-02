@@ -6,16 +6,12 @@
     <div>
       <ul class="nav navbar-nav navbar-right">
 
-        <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-        <li>{{#link-to 'store'}}Products{{/link-to}}</li>
-        <li>{{#link-to 'cart'}}<span class = "cartCounter">{{cart-counter}} {{cart-total}}</span>{{/link-to}}</li>
-        <!-- <li>{{#link-to 'admin'}}Admin{{/link-to}}</li> -->
-
+        {{#link-to 'index'}}Home{{/link-to}}
+        {{#link-to 'store'}}Products{{/link-to}}
+        {{#link-to 'cart'}} Cart {{/link-to}}
+        {{#link-to 'admin'}} Admin {{/link-to}} 
       </ul>
     </div>
   </div>
 </nav>
-
-<div class="container">
-  {{outlet}}
-</div>
+{{outlet}}
