@@ -1,6 +1,4 @@
 {{#each model as |product|}}
   {{product-tile product=product}}
+  {{add-to-cart product=product}}
 {{/each}}
-
-Cart:
-{{display-cart}}  
