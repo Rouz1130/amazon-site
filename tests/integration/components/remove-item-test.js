@@ -1,7 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('review-item', 'Integration | Component | review item', {
+moduleForComponent('remove-item', 'Integration | Component | remove item', {
   integration: true
 });
 
@@ -9,15 +9,15 @@ test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
-  this.render(hbs`{{review-item}}`);
+  this.render(hbs`{{remove-item}}`);
 
   assert.equal(this.$().text().trim(), '');
 
   // Template block usage:
   this.render(hbs`
-    {{#review-item}}
+    {{#remove-item}}
       template block text
-    {{/review-item}}
+    {{/remove-item}}
   `);
 
   assert.equal(this.$().text().trim(), 'template block text');
