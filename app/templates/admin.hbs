@@ -1,6 +1,7 @@
-
+<h2>Admin</h2>
 {{new-item saveItem='saveItem'}}
 
-{{#each model as |product|}}
-  {{product-tile product=product}}
+{{#each model as |item|}}
+  {{item-detail item=item}}
+  {{remove-item item=item destroyItem='destroyItem'}}
 {{/each}}
