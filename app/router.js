@@ -1,16 +1,16 @@
+
 import Ember from 'ember';
 import config from './config/environment';
 
 const Router = Ember.Router.extend({
-  location: config.locationType,
-  rootURL: config.rootURL
+  location: config.locationType
 });
 
 Router.map(function() {
-  this.route('cart');
   this.route('store');
+  this.route('cart');
   this.route('admin');
-  this.route('item', {{path: '/item/:item_id'});
+  this.route('item', {path: '/item/:item_id'});
 });
 
 export default Router;
